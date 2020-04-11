@@ -1,0 +1,50 @@
+﻿@page
+@{
+    ViewData["Title"] = "RegisterPromotion";
+}
+
+<div class="mt-5">
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h1 class="text-center">Registrar promoção</h1>
+        </div>
+        <hr />
+        <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
+            <div id="MsgWarning" style="display:none">
+                <div class="alert alert-danger" role="alert">
+                    Preencha todos os campos
+                </div>
+            </div>
+            <div id="MsgSuccess" style="display:none">
+                <div class="alert alert-success" role="alert">
+                    Cadastrado com sucesso
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 col-12">
+                    <label class="control-label">Empresa / Compania:</label>
+                    <input id="Company" type="text" class="form-control input-sm" maxlength="50" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-lg-10 col-12">
+                    <label class="control-label">Descrição</label>
+                    <input id="Description" type="text" class="form-control input-sm" maxlength="35" />
+                </div>
+                <div class="col-xs-2 col-lg-2 col-12">
+                    <label class="control-label">Valor (R$)</label>
+                    <input id="Value" type="number" step="0.01" class="form-control input-sm" maxlength="8" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-lg-2 col-12 mt-3">
+                    <input id="btnRegister" class="btn btn-success" type="button" value="Registrar promoção" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/registerPromotion.js"></script>
+}
