@@ -1,4 +1,3 @@
-# promo_signalR
-Projeto desenvolvido em C# utilizando WebSocket
+# Promo
 
-Este é um projeto simples para demonstrar o uso do signalR tanto no back-end como no front-end
+#### Promo is a simple project developed to demonstrate the use of signalR technology on the back-end and front-end
